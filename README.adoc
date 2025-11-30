@@ -1,0 +1,23 @@
+= Campus Pathfinding
+
+This repository contains `arcpy` Python scripts and an ArcGIS Pro Toolbox for finding optimal routes using indoor and outdoor data.
+
+This project was created to fulfill the requirements of FW 5553 _Python for Modern GIS and Remote Sensing_.
+
+== Overview
+
+This project implements a pathfinding routine using both outdoor and indoor walkways for navigation. It assigns a cost value to indoor
+and outdoor walkways to find routes that prioritize using indoor walkways and navigating through
+adjoining buildings.
+
+== Contents
+
+=== Scripts
+
+- `prepare_campus_cost_raster.py` -- Creates a cost raster from vector walkway data discriminated by environment (indoor/outdoor)
+- `find_optimal_campus_path.py` -- Finds the optimal path between two points using the cost raster generated from the foregoing script
+
+=== Other
+
+- `CampusGIS.atbx` -- Contains the scripts in an ArcGIS Pro Toolbox, complete with tool documentation
+- `CampusRoute.lyrx` -- Contains an opinionated layer style for displaying the generated optimal route
