@@ -2,7 +2,9 @@
 
 This repository contains `arcpy` Python scripts and an ArcGIS Pro Toolbox for finding optimal routes using indoor and outdoor data.
 
-This project was created to fulfill the requirements of FW 5553 _Python for Modern GIS and Remote Sensing_.
+It was created in the context of finding optimal routes over the campus of Michigan Technological University, but is easily extensible to other sites and venues.
+
+This project was created to fulfill the requirements of FW 5553 _Python for Modern GIS and Remote Sensing_ at Michigan Tech.
 
 == Overview
 
